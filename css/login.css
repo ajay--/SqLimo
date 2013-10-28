@@ -1,0 +1,24 @@
+#login_form{
+	max-width: 330px;
+	margin: 0 auto;
+	padding: 15px;
+	margin-top: 20%;
+}
+
+#login_form *{
+	margin: 0 auto;
+	padding: 15px;
+	width: 280px;
+	height: 45px;
+}
+
+#button{
+	color: #fff;
+	height: 40px;
+	padding: 5px;
+}
+
+#error{
+	color: #CC0000;
+	display: none;
+}
