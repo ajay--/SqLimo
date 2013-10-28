@@ -16,7 +16,7 @@
 	}
 	function is_in(){
 		if(!isset($_SESSION['username'])){
-		header("Location: http://".$_SERVER['HTTP_HOST']."/login.php");
+		header("Location: http://".$_SERVER['HTTP_HOST']."sqlimo/login.php");
 		exit();
 		}
 	}	

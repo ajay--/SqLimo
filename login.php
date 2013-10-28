@@ -18,7 +18,7 @@
 				<input class="form-control" type="text" name="username" required placeholder="Username"/>
 				<input class="form-control" type="password" name="password" required placeholder="Password"/><br>
 				<span id="error" >Username or Password Error</span>
-				<input class="btn btn-primary" id="button" type="submit" text="Log In"/>
+				<input class="btn btn-primary" id="button" type="submit" value="Log In"/>
 			</form>
 		</div>
 	</body>
