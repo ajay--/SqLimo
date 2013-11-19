@@ -1,0 +1,57 @@
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>          
+		  <form class="form-inline" role="form">
+		  	<div class="form-group">
+		  		<input id="" type="text" class="form-control tbl_name" placeholder="Table Name"/>
+			</div>
+		  </form>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline" role="form">
+			  <div class="form-group">			    
+			    <input type="text" class="form-control col_name" id="" placeholder="Name">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control col_len" id="" placeholder="Length">
+			  </div>
+			  <div class="form-group">
+			    <select name="type" id="" class="form-control col_type">
+					<option value=""></option>
+					<option value="varchar">varchar</option>
+					<option value="char">char</option>
+					<option value="int">int</option>
+					<option value="date">date</option>
+					<option value="time">time</option>
+					<option value="timestamp">timestamp</option>
+				</select>
+			  </div>&nbsp;&nbsp;&nbsp;&nbsp;
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox" class="col_null">&nbsp;&nbsp;Not Null&nbsp;&nbsp;&nbsp;
+			    </label>
+			  </div>	
+			  <div class="radio">
+			    <label>
+			      <input type="radio" name="col_key" value="primary">&nbsp;&nbsp;Primary&nbsp;&nbsp;
+				  <input type="radio" name="col_key" value="unique">&nbsp;&nbsp;Unique&nbsp;&nbsp;
+			    </label>
+			  </div>	
+			  <div class="form-group">
+			    <input type="text" class="form-control col_dfl" id="" placeholder="Default">
+			  </div>	  			  
+		  </form>		  
+        </div>		
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-default" style="margin-top: 10px;" onclick="funn()">+ Column</button>&nbsp;
+		  <button type="button" class="btn btn-primary" onclick="new_table()">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->\
+	<script>
+	var temp_form = $('.modal-body form:first').clone();
+	function funn(){		
+		$('.modal-body').append(temp_form.clone());
+	}	
+	</script>
